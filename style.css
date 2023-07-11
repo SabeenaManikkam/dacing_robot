@@ -1,0 +1,215 @@
+.face{
+    height: 130px;
+    width: 150px;
+    background-color: aqua;
+    margin-top:100px;
+    margin-left:600px;
+    border-radius: 500px 500px 0px 0px;
+    position: relative;
+}
+.reye{
+    height:15px;
+    width:15px;
+    background-color: black;
+    border-radius: 100%;
+    margin-top:-30px;
+    margin-left:620px;
+    position: absolute;
+}
+.leye{
+    height:15px;
+    width:15px;
+    background-color: black;
+    border-radius: 100%;
+    margin-top:-30px;
+    margin-left:710px;
+    position: absolute;
+}
+.body{
+    height:150px;
+    width: 150px;
+    background-color: aqua;
+    border-radius:0px 0px 40px 40px;
+    margin-top:7px;
+    margin-left: 600px;
+    z-index: 1;
+    position:absolute;
+}
+.rhand{
+    height:105px;
+    width:30px;
+    background-color: aqua;
+    border-radius: 30px 30px 30px 30px;
+    margin-top:45px;
+    margin-left:560px ;
+    position: absolute;
+} 
+.lhand{
+    height:105px;
+    width:30px;
+    background-color: aqua;
+    border-radius: 30px 30px 30px 30px;
+    margin-top:45px;
+    margin-left:760px ;
+    position: absolute;
+}
+.rleg{
+    height:105px;
+    width: 30px;
+    background-color: aqua;
+    border-radius: 30px 30px 30px 30px;
+    margin-top:130px;
+    margin-left:630px;
+    /* border: 2px solid black; */
+    position:absolute;
+}
+.lleg{
+    height:105px;
+    width: 30px;
+    background-color: aqua;
+    border-radius: 30px 30px 30px 30px;
+    margin-top:130px;
+    margin-left:690px;
+    position:absolute;
+} 
+.reye:hover{
+    background-color: black;
+    transform: scale(1);
+}
+.leye:hover{
+    background-color: black;
+    transform: scale(1);
+}
+.face:hover{
+    background-color: greenyellow;
+    transform: scale(1);
+}
+.rhand:hover{
+    background-color: greenyellow;
+    transform: scale(1);
+}
+.lhand:hover{
+    background-color: greenyellow;
+    transform: scale(1);
+}
+.rleg:hover{
+    background-color: greenyellow;
+    transform: scale(1);
+}
+.body:hover{
+    background-color: greenyellow;
+    transform: scale(1);
+}
+.lleg:hover{
+    background-color: greenyellow;
+    transform: scale(1);
+} 
+
+
+
+.face:hover{
+    animation:face 2s infinite;
+}
+@keyframes face{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(60deg);
+    }
+    75%{
+        transform: rotate(80deg);
+    }
+    100%{
+        transform: rotate(100deg);
+    }
+}
+.lleg:hover{
+    animation:lleg 1s infinite;
+}
+@keyframes lleg{
+    0%{
+        transform: rotate(0deg);
+        transform-origin:bottom;
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(40deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(40deg);
+    }
+}
+
+.lhand:hover{
+    animation:lhand 3s infinite;
+}
+@keyframes lhand{
+    0%{
+        transform: rotate(-0deg);
+        transform-origin:middle;
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(40deg);
+    }
+}
+.rhand:hover{
+    animation:rhand 3s infinite;
+}
+@keyframes rhand{
+    0%{
+        transform: rotate(0deg);
+        transform-origin:middle;
+    }
+    25%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(40deg);
+    }
+    75%{
+        transform: rotate(40deg);
+    }
+    100%{
+        transform: rotate(40deg);
+    }
+}
+.container:hover, .rhand, .lhand, .rleg, .lleg{
+    animation:container 3s infinite;
+}
+@keyframes container{
+    0%{
+        transform: rotate(-10deg);
+        transform-origin:middle;
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(40deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(40deg);
+    }
+}
